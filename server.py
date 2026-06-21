@@ -60,7 +60,7 @@ load_env(os.path.join(BASE_DIR, ".env"))
 
 # ─────────── Device parameters (from .env) ───────────
 DEVICE_ID = os.environ.get("VACUUM_DEVICE_ID", "")
-DEVICE_IP = os.environ.get("VACUUM_DEVICE_IP", "192.168.0.91")
+DEVICE_IP = os.environ.get("VACUUM_DEVICE_IP", "")  # robot's LAN IP (from your router)
 LOCAL_KEY = os.environ.get("VACUUM_LOCAL_KEY", "")
 VERSION   = float(os.environ.get("VACUUM_VERSION", "3.5"))
 

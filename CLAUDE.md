@@ -73,7 +73,7 @@ reset_filter, reset_duster_cloth`.
 
 ```
 VACUUM_DEVICE_ID=…        VACUUM_LOCAL_KEY=…   (!!! секрет)
-VACUUM_DEVICE_IP=192.168.0.91                 VACUUM_VERSION=3.5
+VACUUM_DEVICE_IP=192.168.x.x  (з роутера)     VACUUM_VERSION=3.5
 VACUUM_CLOUD_ORIGIN=https://openapi.tuyaeu.com
 VACUUM_CLOUD_CLIENT=…     VACUUM_CLOUD_SECRET=…  (!!! секрет)
 VACUUM_HOST=127.0.0.1     VACUUM_PORT=8765

@@ -64,7 +64,7 @@ cp .env.example .env        # Windows: copy .env.example .env
 
 ```ini
 VACUUM_DEVICE_ID=...        # your robot's Device ID
-VACUUM_DEVICE_IP=192.168.0.91   # the robot's LAN IP (pin it via a DHCP reservation)
+VACUUM_DEVICE_IP=192.168.x.x    # the robot's LAN IP — find it in your router (see note)
 VACUUM_LOCAL_KEY=...        # your robot's Local Key
 VACUUM_VERSION=3.5          # protocol version from devices.json
 # Optional — only for the floor map:
@@ -75,6 +75,9 @@ VACUUM_CLOUD_SECRET=...
 VACUUM_HOST=127.0.0.1       # 0.0.0.0 to reach it from other devices on the LAN
 VACUUM_PORT=8765
 ```
+
+> **Find the robot's IP** in your router's admin page → *connected devices / DHCP client list*
+> (look for the vacuum). Give it a **static / reserved lease** so the address doesn't change.
 
 `.env` is git‑ignored — your secrets never get committed.
 
